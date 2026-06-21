@@ -1,28 +1,31 @@
 #include <iostream>
 
-int getValueFromUser() {
-  std::cout << "Enter an integer: ";
-  int input{};
-  std::cin >> input;
+int getValueFromUser()
+{
+	std::cout << "Enter an integer: ";
+	int input{};
+	std::cin >> input;
 
-  return input;
+	return input;
 }
 
-void printDoubleValue(int x) {
-  std::cout << x << " doubled is " << x * 2 << "\n";
+void printDoubleValue(int x)
+{
+	std::cout << x << " doubled is " << x * 2 << "\n";
 }
 
 int add(int x, int y) { return x + y; }
 
-int main() {
+int main()
+{
 
-  int num{getValueFromUser()};
+	int num{getValueFromUser()};
 
-  printDoubleValue(num);
+	printDoubleValue(num);
 
-  std::cout << add(6, 7) << "\n";
+	std::cout << add(6, 7) << "\n";
 
-  return 0;
+	return 0;
 }
 
 // Optional arguments how to define them
